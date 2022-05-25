@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Beginner2 - JavaExe.cpp">
+    <ClCompile Include="Beginner3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
