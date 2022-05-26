@@ -441,21 +441,26 @@ void ex23() {
 	9 99 999 9999 99999
 	The sum of the series = 111105
 	*/
-	int m,n,sum=0;
+	int m, n;
+	long long sum = 0;
 	cout << "Input number of terms: "; cin >> m;
 	cout << "Input a number : "; cin >> n;
 	for (int i = 1; i <= m; i++) {
-		string s = string(i,n);
-		const char* carr = s.c_str();
+		string s = string(i, char(n) + '0'); // ASCII Table
+		cout << s << " ";
+		long long element = stoll(s);
+		sum += element;
 	}
-	for (int i = 0; *carr != '\0'; carr++) {
-		
-	}
-	cout << endl << endl;
+	cout << endl;
 	cout << "The sum of the series = " << sum;
+	cout << endl << endl;
 }
 int main() {
-	ex22();
+	/*int n = 9;
+	string s = string(5, char(n) + '0');
+	cout << s << endl;
+	cout << stol(s) - 1<< endl;*/
+	ex23();
 
 	return 0;
 }
